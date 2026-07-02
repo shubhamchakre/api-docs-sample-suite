@@ -1,0 +1,73 @@
+site_name: Acme Payments API
+site_description: Developer documentation for the Acme Payments API
+site_url: https://shubhamchakre.github.io/api-docs-sample-suite/
+site_author: Shubham Chakre
+repo_url: https://github.com/shubhamchakre/api-docs-sample-suite
+repo_name: api-docs-sample-suite
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - getting-started/overview.md
+    - getting-started/authentication.md
+    - getting-started/quickstart.md
+  - Tutorials:
+    - tutorials/first-payment.md
+    - tutorials/handle-webhooks.md
+    - tutorials/process-refund.md
+  - Guides:
+    - guides/idempotency.md
+    - guides/webhook-security.md
+    - guides/test-vs-live-mode.md
+  - Reference:
+    - reference/api-overview.md
+    - reference/error-catalog.md
+    - reference/webhook-events.md
+    - reference/changelog.md
+    - reference/deprecation-policy.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/shubhamchakre/api-docs-sample-suite
